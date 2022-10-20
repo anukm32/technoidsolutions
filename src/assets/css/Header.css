@@ -1,0 +1,127 @@
+.header{
+    background: #008374;;
+    color: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    height: 90px;
+    border-bottom: 2px solid var(--primaryColor);
+    box-shadow: var(--lightShadow);
+  }
+  .sticked{
+    position: fixed !important;
+    background: #008374;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    box-shadow: 0px 2px 20px rgb(0 0 0 / 10%) !important;
+}
+
+.profile-dropdown{
+  
+}
+
+  
+  .app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    text-transform: capitalize;
+}
+.app__navbar-links li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.app__navbar-links li:hover {
+  color: var(--color-grey);
+}
+.app__navbar-links li a{
+  color: white;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .header__top{
+    display: none;
+  }
+ 
+  .logo img{
+    width:67%;
+  }
+  .navbar-toggler{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+   
+  }
+  .navbar-collapse{
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    left: 0px;
+    padding: 0 15px;
+
+  }
+}
+
+.navbar .navbar-nav .nav_links {
+  white-space: nowrap !important;
+  padding: 10px 0 10px 28px !important;
+}
+
+.navbar .nav_links,
+  .navbar .nav_links:focus {
+    font-family: var(--font-secondary);
+    font-size: 16px !important;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .navbar .nav_links:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 8px;
+    left: 30px;
+    background-color: var(--color-secondary);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .navbar .nav_links:hover:before,
+  .navbar .active:before {
+    visibility: visible;
+    width: 76%;
+  }
+
+  .navbar .nav_links:hover,
+  .navbar .active,
+  .navbar .active:focus{
+    color: #fff !important;
+  }
+
+  
+
+  @media only screen and (max-width: 991px) {
+    .navbar-collapse{
+      background-color: var(--color-primary) !important;
+    }
+  
+    .navbar-collapse .navbar .nav_links:hover:before,
+    .navbar .active:before {
+      width: 10% !important;
+    }
+  
+  }
+
+  
